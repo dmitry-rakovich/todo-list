@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 1rem;
+}
+
+button {
+  cursor: pointer;
+  margin: 0.5rem;
+}
