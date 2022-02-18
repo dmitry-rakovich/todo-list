@@ -2,6 +2,9 @@
 ## Ветка main
 todo-list без запроса todo с сервера
 
+## Ветка server-todos
+получение, добавление, удаление todo при взаимодействии с сервером и redux-thunk
+
 ## Available Scripts
 
 In the project directory, you can run:
