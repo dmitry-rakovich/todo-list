@@ -1,18 +1,17 @@
 import { useDispatch } from "react-redux";
-import { removeTodo } from "../store/todoSlice";
-import { editTodo, saveTodo } from '../store/todoSlice'
+import { removeTodo, deleteTodo, editTodo, saveTodo } from '../store/todoSlice'
 import { useState } from "react";
 
-const TodoItem = ({ id, text }) => {  
+const TodoItem = ({ id, title }) => {  
   const [value, setValue] = useState("");
   const [edit, setEdit] = useState(null);
   
   const dispatch = useDispatch()
 
   const editTask = () => {
-    dispatch(editTodo({id, text}))
+    dispatch(editTodo({id, title}))
     setEdit(id);
-    setValue(text);
+    setValue(title);
   }
 
   const saveTask = () => {
@@ -31,11 +30,11 @@ const TodoItem = ({ id, text }) => {
         </div>
       ) : (
         <div>
-          {text}
+          {title}
           <button onClick={editTask}>
             Edit todo
           </button>
-          <button onClick={() => dispatch(removeTodo({id}))}>Remove todo</button>
+          <button onClick={() => dispatch(deleteTodo(id))}>Remove todo</button>
         </div>
       )}
     </div>

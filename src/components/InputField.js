@@ -1,8 +1,8 @@
-const InputField = ({text, setText,     addTodo}) => {
+const InputField = ({title, setText, addTodo}) => {
     return (
         <div>
     <label>
-        <input value={text} onChange={(e) => setText(e.target.value)} />
+        <input value={title} onChange={(e) => setText(e.target.value)} />
         <button onClick={addTodo}>Add Todo</button>
     </label>
         </div>
