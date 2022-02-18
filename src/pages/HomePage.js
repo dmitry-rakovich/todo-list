@@ -2,7 +2,7 @@ const HomePage = () => {
     return (
         <div className="home_page">
         <h1>Home Page</h1>
-        <img src="https://www.clipartmax.com/png/middle/419-4192165_png-file-svg-shopping-list-icon-png.png" width={84} height={106}></img>
+        <img src="https://www.clipartmax.com/png/middle/419-4192165_png-file-svg-shopping-list-icon-png.png" width={84} height={106} alt="logo"></img>
         <ul>
             <span>Реализованные возможности:</span>
             <li>Добавление дела</li>
